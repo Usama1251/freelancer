@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Why Choose Us</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #fff;
+      color: #000;
+    }
+
+    .navbar {
+      padding: 1rem 2rem;
+    }
+
+    .navbar-brand.ats-logo {
+      font-weight: 800;
+      font-size: 1.5rem;
+      color: #000;
+      position: relative;
+      text-decoration: none;
+      text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .nav-center {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    .nav-link {
+      font-size: 1rem;
+      font-weight: 500;
+      margin: 0 1rem;
+      color: #6E6BAA !important;
+    }
+
+    .nav-link:hover {
+      color: #4c48a4 !important;
+    }
+
+    .btn-dark-blue {
+      background-color: #07272D;
+      color: white;
+      border: none;
+    }
+
+    .btn-dark-blue:hover {
+      background-color: #02191d;
+    }
+
+    .whyChoosebtn {
+      background: none;
+      color: black;
+      border: 1px solid #000;
+      padding: 0.5rem 1rem;
+      border-radius: 35%;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .contactbtn {
+      background: black;
+      color: white !important;
+      padding: 10px;
+      font-size: 18px;
+      border-radius: 35%;
+      text-decoration: none;
+    }
+
+    .sectionOne {
+      background-color: #FFF3F3;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      padding: 4rem 0;
+    }
+
+    .sectionOne h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .sectionOneLink {
+      position: absolute;
+      top: 43.9%;
+      left: 43%;
+      background-color: #FA1239;
+      color: white !important;
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    .sectionTwo {
+      padding: 4rem 0;
+    }
+
+    .sectionTwoPart1 {
+      flex: 1;
+      padding-right: 2rem;
+    }
+
+    .sectionTwoPart1 h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+
+    .sectionTwoPart1 span {
+      color: #E63946;
+    }
+
+    .sectionTwoPart1 p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      font-weight: 400;
+      margin-bottom: 1rem;
+    }
+
+    .sectionTwoPart2 {
+      flex: 1;
+      text-align: right;
+    }
+
+    .sectionTwoPart2 img {
+      max-width: 80%;
+      height: auto;
+    }
+
+    .sectionThree {
+      background-color: #FA1239;
+      padding: 3rem 2rem 10rem 2rem;
+      color: white;
+      font-weight: 600;
+      border-radius: 20px;
+      margin-top: 4rem;
+      text-align: center;
+      position: relative;
+      z-index: 0;   
+    }
+
+    .sectionThree p:first-child {
+      font-size: 2.25rem;
+    }
+
+    .sectionThree p:last-child {
+      font-size: 1rem;
+      font-weight: 100;
+    }
+
+    .sectionFour {
+      margin: 0 50px;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border: none;
+        border-radius: 16px;
+        padding: 2rem 1rem;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        text-align: center;
+        height: 100%; 
+        z-index: 100px;
+      }
+      
+      .card-body {
+        flex: 1;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+      }
+      
+      .card-text {
+        font-size: 1rem;
+        line-height: 1.6;
+        font-weight: 500;
+      }
+
+      .card-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+        align-items: stretch;
+        margin-top: -7rem;
+        z-index: 10;
+      }
+      
+
+      .card-img-top {
+        width: 150px;
+        height: 150px;
+        object-fit: contain;
+        margin: 0 auto 1.5rem;
+      }
+      
+      .card_image {
+        width: 150px !important;
+        height: 150px !important;
+        object-fit: contain;
+        margin-bottom: 1.5rem;
+      }
+
+    @media (max-width: 991px) {
+      .sectionTwo {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .sectionTwoPart1,
+      .sectionTwoPart2 {
+        padding: 1rem 0;
+      }
+
+      .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: -2rem;
+      }
+    }
+
+    @media (max-width: 575px) {
+      .card-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .sectionOne h2 {
+        font-size: 2rem;
+      }
+
+      .sectionThree {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+    <div class="container-fluid d-flex align-items-center justify-content-between px-4">
+      <a class="navbar-brand ats-logo" href="#">ATS RESUME</a>
+      <div class="nav-center d-none d-lg-flex">
+        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href="#">About Us</a>
+        <a class="nav-link" href="#">Our Services</a>
+        <a class="nav-link" href="#">Pricing</a>
+        <a class="nav-link" href="#">FAQ</a>
+      </div>
+      <div class="d-flex nav-buttons align-items-center gap-2">
+        <a class="btn btn-outline-dark rounded-pill fw-semibold px-3 py-2" href="#">Why Choose Us</a>
+        <a class="btn btn-dark-blue rounded-pill fw-semibold px-3 py-2" href="#">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <div class="text-center mt-5">
+    <div class="sectionOne">
+      <h2 style="font-size:43px; font-weight:600;">Why Choose Us</h2>
+      <div class="sectionOneLink">Home &gt; Why Choose Us</div>
+    </div>
+  </div>
+
+  <!-- Section Two -->
+  <div class="container">
+    <div class="sectionTwo d-flex flex-column flex-lg-row justify-content-between align-items-center">
+      <div class="sectionTwoPart1 text-start">
+        <h2>Why a Manually Crafted Resume <br> <span>Beats AI</span> and Templates Every Time</h2>
+        <p class="my-4" style="font-size:20px; font-weight:600;">If your resume sounds like everyone else’s, it won’t get you anywhere.</p>
+        <p style="font-size:18px;">In today’s hyper-competitive job market, using an AI tool or downloading a generic template might seem like the easy fix. But here’s the truth: AI doesn’t understand your career, your achievements, or how hiring really works. And templates? They’re built for speed—not strategy.</p>
+      </div>
+      <div class="sectionTwoPart2">
+        <img src="image1.png" alt="img1">
+      </div>
+    </div>
+  </div>
+
+  <!-- Section Three -->
+  <div class="container">
+    <div class="sectionThree">
+      <p>What You Need Is Strategy, Positioning, And Precision.</p> 
+      <p>At ATS RESUME, every resume is crafted by a seasoned HR professional who understands</p>
+    </div>
+
+    <!-- Section Four (Cards) -->
+    <div class="sectionFour mb-5 card-grid">
+      <div class="card">
+        <img src="image2.png" class="card-img-top card_image" alt="img4">
+        <div class="card-body">
+            <h5 class="card-text text-capitalize">What Recruiters Actually Look For</h5>
+        </div>
+      </div>
+      <div class="card">
+        <img src="image3.png" class="card-img-top card_image" alt="img3">
+        <div class="card-body">
+          <h5 class="card-text">How hiring managers <br> make decisions in 6 <br> seconds or less</h5>
+        </div>
+      </div>
+      <div class="card">
+        <img src="image4.png" class="card-img-top card_image" alt="img4">
+        <div class="card-body">
+          <h5 class="card-text">How ATS software reads <br> and ranks resumes</h5>
+        </div>
+      </div>
+      <div class="card">
+        <img src="image5.png" class="card-img-top card_image" alt="img5">
+        <div class="card-body">
+          <h5 class="card-text">How to turn your <br> experience into value- <br> driven impact statements</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
